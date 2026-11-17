@@ -1,0 +1,32 @@
+name: Wrong translation or word info
+description: A translation, form, level or example in the dictionary is wrong or odd.
+title: "Translation: "
+labels: ["translation"]
+body:
+  - type: input
+    id: word
+    attributes:
+      label: Finnish word
+      placeholder: juuri
+    validations:
+      required: true
+  - type: input
+    id: shown
+    attributes:
+      label: What the app shows
+      placeholder: корень
+  - type: input
+    id: correct
+    attributes:
+      label: What it should say
+      placeholder: как раз, именно; корень
+  - type: dropdown
+    id: language
+    attributes:
+      label: Translation language
+      options: [English, Русский, Українська]
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else
+      description: An example sentence or a source helps. Any language is fine.

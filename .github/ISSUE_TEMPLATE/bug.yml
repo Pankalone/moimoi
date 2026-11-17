@@ -1,0 +1,25 @@
+name: Bug
+description: Something doesn't work or looks broken.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: And what you expected instead. Any language is fine.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      placeholder: https://moimoi-finnish.pages.dev/ru/review
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: iPhone 13, Safari
+  - type: markdown
+    attributes:
+      value: Screenshots are welcome. Please don't attach your progress backup file; it's your private study history.

@@ -1,0 +1,12 @@
+name: Idea
+description: Suggest a feature, a text, a dialogue or a phrase.
+title: "Idea: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: Any language is fine.
+    validations:
+      required: true
